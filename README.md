@@ -33,7 +33,7 @@ git push origin master
 
 6. Crie uma branch teste e, dentro dela, altere os 3 arquivos criados;
 ~~~
-git branch -b teste
+git checkout -b teste
 ~~~
 _OU_
 ~~~
@@ -47,14 +47,14 @@ git checkout teste
 ~~~
 git add index.html
 
-git commit - m "commit branch teste arquivo html"
+git commit -m "commit branch teste arquivo html"
 
 git add script.js
 
-git commit - m "commit branch teste arquivo' js"
+git commit -m "commit branch teste arquivo' js"
 
 git add estilo.css
-git commit - m "commit branch teste arquivo css"
+git commit -m "commit branch teste arquivo css"
 
 git push origin teste
 ~~~
