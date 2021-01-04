@@ -1,57 +1,67 @@
-# TreinoGit
->git
-1-Crie um repositório em seu Github chamado TreinoGit;
+# TreinoGit 
+![git](https://avatars0.githubusercontent.com/u/48369317?s=460&u=680878e27fea3e89349b8bcfccd9fb4bd61d5615&v=4)
 
-2-Dentro dele crie 3 arquivos:
+1. Crie um repositório em seu Github chamado TreinoGit;
+~~~
+git clone https://github.com/keitepassos/TreinoGit.git
+~~~
+2. Dentro dele crie 3 arquivos:
+* Um arquivo .html
+* Um arquivo .css
+* Um arquivo .js
 
-a-Um arquivo .html
+3. Crie uma página simples no html, com um css simples e um  js básico;
 
-b-Um arquivo .css
+4. Adcione esses arquivos e dê um commit um por um no repositório, documentando o que você fez;
+~~~
+git add index.html
 
-c-Um arquivo .js
+git commit - m "commit html"
 
-3-Crie uma página simples no html, com um css simples e um  js básico;
+git add script.js
 
-4-Adicione esses arquivos e dê um commit um por um no repositório, documentando o que você fez;
->git add index.html
+git commit - m "commit js"
 
->git commit - m "up arquivo .html"
+git add estilo.css
 
->git add script.js
+git commit - m "commit css"
+~~~
+5. Suba o projeto no repositório remoto;
+~~~
+git push origin master
+~~~
 
->git commit - m "up arquivo .js"
+6. Crie uma branch teste e, dentro dela, altere os 3 arquivos criados;
+~~~
+git branch -b teste
+~~~
+_OU_
+~~~
+git branch teste 
 
->git add estilo.css
-
->git commit - m "up arquivo .css"
-
-5-Suba o projeto no repositório remoto;
->git push origin main
-
-6-Crie uma branch teste e, dentro dela, altere os 3 arquivos criados;
->git branch -b teste
-
-5-Faça o passo 4 novamente e suba sua branch teste no repositório remoto;
->git add index.html
-
->git commit - m "up branch teste arquivo .html"
-
->git add script.js
-
->git commit - m "up branch teste arquivo .js"
-
->git add estilo.css
->git commit - m "up branch teste arquivo .css"
-
->git push origin teste
-
-5-Suba o projeto no repositório remoto;
->git push origin main
+git checkout teste
+~~~
 
 
-8-Por fim, dê um merge com a branch master e suba no respositório;
+7. Faça o passo 4 novamente e suba sua branch teste no repositório remoto;
+~~~
+git add index.html
 
->git checkout main
+git commit - m "commit branch teste arquivo html"
 
->git push origin main
+git add script.js
+
+git commit - m "commit branch teste arquivo' js"
+
+git add estilo.css
+git commit - m "commit branch teste arquivo css"
+
+git push origin teste
+~~~
+8. Por fim, dê um merge com a branch master e suba no respositório;
+~~~
+git checkout master
+
+git push origin master
+~~~
 
