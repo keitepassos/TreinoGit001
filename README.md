@@ -16,15 +16,15 @@ git clone https://github.com/keitepassos/TreinoGit.git
 ~~~
 git add index.html
 
-git commit - m "commit html"
+git commit -m "commit html"
 
 git add script.js
 
-git commit - m "commit js"
+git commit -m "commit js"
 
 git add estilo.css
 
-git commit - m "commit css"
+git commit -m "commit css"
 ~~~
 5. Suba o projeto no repositório remoto;
 ~~~
